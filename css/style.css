@@ -1,0 +1,162 @@
+@import"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    transition: .4s all ease-in-out
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #ece8e8;
+    font-family: "Montserrat", sans-serif
+}
+
+.nav {
+    border-bottom: 1px solid #000;
+    padding: 1.6em
+}
+
+.nav .navbar-nav {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center
+}
+
+.nav .navbar-nav .navbar-brand {
+    font-weight: bold;
+    font-size: 1.2em
+}
+
+.nav .navbar-nav ul {
+    display: flex;
+    gap: 2em;
+    text-transform: capitalize
+}
+
+.nav .navbar-nav ul li:nth-child(1) {
+    font-weight: bold
+}
+
+.nav .navbar-nav .btn-group {
+    display: flex;
+    gap: 1.2em
+}
+
+.nav .navbar-nav .btn-group button {
+    padding: 1em;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    box-shadow: 3px 4px 3px #000;
+    cursor: pointer;
+    transition: box-shadow .2s;
+    border-radius: 2px
+}
+
+.nav .navbar-nav .btn-group button:hover {
+    box-shadow: unset
+}
+
+.nav .navbar-nav .btn-group button:nth-child(1) {
+    background: #fff;
+    border: 1px solid #fff
+}
+
+.nav .navbar-nav .btn-group button:nth-child(2) {
+    background: linear-gradient(90deg, hsl(326deg, 53%, 62%) 0%, hsl(340deg, 71%, 65%) 14%, hsl(352deg, 83%, 67%) 22%, hsl(6deg, 88%, 65%) 28%, hsl(20deg, 85%, 58%) 33%, hsl(34deg, 84%, 48%) 38%, hsl(9deg, 82%, 60%) 42%, hsl(343deg, 70%, 57%) 47%, hsl(318deg, 45%, 50%) 54%, hsl(267deg, 35%, 49%) 66%, hsl(208deg, 99%, 32%) 100%)
+}
+
+header {
+    padding: 3em
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-around
+}
+
+header .header-top .left {
+    width: 30em
+}
+
+header .header-top .left h1 {
+    font-size: 3em;
+    text-transform: capitalize
+}
+
+header .header-top .right {
+    width: 26.5em
+}
+
+header .header-top .right p {
+    margin: 0 0 1em 0
+}
+
+header .header-top .right .count {
+    display: flex;
+    gap: 1em;
+    text-align: center
+}
+
+header .header-top .right .count div h2 {
+    font-weight: bold;
+    font-size: 2em
+}
+
+header .header-bottom {
+    margin-top: 4em
+}
+
+header .header-bottom .img-container {
+    display: flex;
+    justify-content: space-evenly
+}
+
+header .header-bottom .img-container img {
+    width: 18em;
+    height: 18em;
+    filter: grayscale(1);
+    cursor: pointer;
+    border: 10px solid rgba(0, 0, 0, 0);
+    -o-border-image: url(../assets/border.png) 20;
+    border-image: url(../assets/border.png) 20;
+    transition: filter .4s
+}
+
+header .header-bottom .img-container img:hover {
+    filter: grayscale(0)
+}
+
+header .header-bottom .img-container img:nth-child(1) {
+    transform: rotate(3deg);
+    transition: transform .3s
+}
+
+header .header-bottom .img-container img:nth-child(1):hover {
+    transform: rotate(0)
+}
+
+header .header-bottom .img-container img:nth-child(2) {
+    transform: rotate(-3deg);
+    transition: transform .3s
+}
+
+header .header-bottom .img-container img:nth-child(2):hover {
+    transform: rotate(0)
+}
+
+header .header-bottom .img-container img:nth-child(3) {
+    transform: rotate(2deg) translateY(-10px);
+    transition: transform .3s
+}
+
+header .header-bottom .img-container img:nth-child(3):hover {
+    transform: rotate(0)
+}
